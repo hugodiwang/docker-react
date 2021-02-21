@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t hugodiwang/docker-react -f Dockerfile .
+  - docker build -t hugodiwang/docker-react .
 
 script:
   - docker run -e CI=true hugodiwang/docker-react npm run test
